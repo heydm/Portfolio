@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --blue:#5069bb;
+   --red:#c0392b;
+   --lightblue:#32A6C3;
+   --black:#333;
+   --white:#fff;
+   --light-color:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5;
+   --border:.2rem solid var(--white);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition:all .2s linear;
+}
+
+*::selection{
+   background-color: var(--blue);
+   color:var(--white);
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--blue);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6.5rem;
+}
+
+body{
+   background: var(--light-bg);
+}
+
+section{
+   padding:3rem 2rem;
+}
+.header {
+    background: #222;
+    color: #fff;
+    padding: 0 0 10px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.header .logo {
+    border-radius: 8px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.navbar ul li a:hover {
+    color: #ff9800;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 1.3rem;
+}
+
+.icons a, .icons div {
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.icons a:hover, .icons div:hover {
+    color: #ff9800;
+}
+
+.icons span {
+    background: #ff9800;
+    color: #fff;
+    border-radius: 12px;
+    padding: 2px 7px;
+    font-size: 0.9rem;
+    position: absolute;
+    top: -10px;
+    right: -15px;
+}
+
+.account-box {
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px 20px;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    min-width: 220px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    display: none;
+    z-index: 100;
+}
+
+.account-box.active {
+    display: block;
+}
+
+.account-box p {
+    margin: 0 0 8px 0;
+    font-size: 1rem;
+}
+
+.account-box a.option-btn,
+.account-box a.delete-btn {
+    display: block;
+    margin: 8px 0;
+    padding: 7px 0;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.account-box a.option-btn {
+    background: #ff9800;
+    color: #fff;
+}
+
+.account-box a.delete-btn {
+    background: #e53935;
+    color: #fff;
+}
+
+.login-register-links {
+    margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+    .header .flex {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .icons {
+        margin-top: 10px;
+    }
+    .account-box {
+        right: 10px;
+        top: 60px;
+    }
+}

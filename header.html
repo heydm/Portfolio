@@ -1,12 +1,42 @@
 <header class="header">
+
     <div class="flex">
-        <!--<img src="/images/logosci.jpg" class="logo" width="15%" alt="SCI Logo">-->
+        <img src="/../images/nombre2.png" class="logo" width="15%" href="index.html">
+
         <nav class="navbar">
             <ul>
-                <li><a href="/index.html">Inicio</a></li>
-
-                <li><a href="/about.html">Hola</a></li>
+                <li><a href="/../index.html">Inicio</a></li>
+                
+              
             </ul>
         </nav>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a href="/search_page.php" class="fas fa-search"></a>
+
+            <div id="user-btn" class="fas fa-user"></div>
+        
+            <a href="/"><i class="fas fa-heart"></i><span></span></a>
+            <a href="/"><i class="fas fa-shopping-cart"></i><span></span></a>
+
+        </div>
+        <div class="account-box">
+            <p>Usuario : <span class="user-logged-in"></span></p>
+            <p>Email : <span class="user-email"></span></p>
+            
+            <a href="/profile/view_profile.php" class="option-btn" id="viewProfileLink" style="display: none;">Ver Perfil</a>
+            <a href="/profile/logout.php" class="delete-btn" id="logoutButton" style="display: none;">Cerrar sesión</a>
+            
+            <div class="login-register-links" id="authLinks">
+                <a href="/profile/register.php" class="option-btn">Registrarse</a>
+                <a href="/profile/login.php" class="delete-btn">Iniciar sesión</a>
+            </div>
+        </div>
+
+        
+
+
+      
+
     </div>
-</header>
+    </header>
