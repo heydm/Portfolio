@@ -1,0 +1,303 @@
+/*----GENERAL----*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --blue:#B9CDDA;
+   --red:#c0392b;
+   --lightblue:#9fc1e0;
+   --darkblue:#307bad;
+   --black:#333;
+   --white:#fff;
+   --light-color:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5;
+   --border:.2rem solid var(--white);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; 
+   border:none;
+   text-decoration: none;
+   transition:all .2s linear;
+}
+
+*::selection{
+   background-color: var(--blue);
+   color:var(--white);
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--blue);
+}
+
+/*----GENERAL2----*/
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6.5rem;
+}
+
+body{
+   background: var(--light-bg);
+}
+
+section{
+   padding:3rem 2rem;
+}
+
+
+
+/*----HEADER----*/
+.header{
+   position: sticky;
+   top:0; left:0; right:0;
+   z-index: 1000;
+   padding:1rem 2rem;
+   background: var(--white);
+   box-shadow: var(--box-shadow);
+}
+.header .flex{
+     margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding:1.5rem 2rem;
+   max-width: 1200px;
+   position: relative;
+}
+
+.header .flex .logo{
+   width: 15%;
+   height: auto;
+   cursor: pointer;
+}
+.header .flex .logo img {
+   width: auto;    
+   height: 50px;     
+   max-width: 100px; 
+   object-fit: contain;
+}
+.header .flex .navbar ul{
+   list-style: none;
+}
+.header .flex .navbar ul li{
+   float: left;
+   position: relative;
+}
+.header .flex .navbar ul li a{
+   font-size: 2rem;
+   padding:1rem 1.5rem;
+   display: block;
+   color:var(--light-color);
+   text-transform: capitalize;
+}
+.header .flex .navbar ul li a:hover{
+   background-color: var(--blue);
+   color:var(--white);
+}
+
+.header .flex .navbar ul li ul{
+   position: absolute;
+   left:0;
+   width: 15rem;
+   background-color: var(--white);
+   animation: fadeIn .2s linear;
+   display: none;
+}
+.header .flex .navbar ul li ul li{
+   width: 100%;
+}
+.header .flex .navbar ul li:hover ul{
+   display: inline-block;
+}
+/*Botones*/
+.btn{
+   display: inline-block;
+   padding:1rem 2rem;
+   font-size: 2rem;
+   color:var(--white);
+   background-color: var(--blue);
+   border-radius: .5rem;
+   cursor: pointer;
+  
+   margin-top: 1rem;
+}
+.btn:hover{
+   background-color: var(--black);
+
+}
+
+/*Iconos*/
+.header .flex .icons > *{
+   font-size: 2.5rem;
+   margin-left: 1rem;
+   color:var(--black);
+   cursor: pointer;
+}
+.header .flex .icons > *:hover{
+   color:var(--blue);
+}
+
+
+
+/*----PRESENTATION primera sección----*/
+.presentation{
+   background-color: var(--blue);
+   text-align: left;
+   padding-left: 5%;
+}
+.presentation .description{
+ 
+   padding-right: 55%;
+}
+.presentation .content{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.presentation .content h3{
+   font-size: 5rem;
+  
+   text-transform: uppercase;
+   margin-bottom: 1rem;
+}
+.presentation .content p{
+   line-height: 2;
+   font-size: 1.7rem;
+   color: var(--black);
+   margin-bottom: 2rem;
+}
+.presentation .content .btn{
+   background-color: var(--darkblue);
+}
+.presentation .content .btn:hover{
+   background-color: var(--white);
+   color:var(--black);
+}
+
+
+/*information segunda sección*/
+.knowledge{
+   background-color: var(--light-bg);
+   text-align: left;
+   padding-left: 5%;
+}
+.knowledge .content{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 2rem;
+   width: 1200px;
+  
+   margin: 0 auto;
+   padding: 0 2rem;
+    text-align: left;
+}
+.knowledge .content .box h3{
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+}
+.knowledge .content a{
+   display: block;
+   font-size: 1.7rem;
+   color: var(--black);
+   margin-bottom: 1rem;
+}
+.knowledge .content p{
+   display: block;
+   font-size: 1.7rem;
+   color: var(--black);
+   margin-bottom: 1rem;
+}
+
+.knowledge .content p i{
+   color:var(--darkblue);
+   padding-right: 1rem;
+}
+
+/*education tercera sección*/
+.education{
+   background-color: var(--blue);
+   text-align: left;
+   padding-left: 5%;
+   
+}
+.education .content{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 2rem;
+   width: 1200px;
+   margin: 0 auto;
+   padding: 0 2rem;
+    text-align: left;
+}
+.education .content .box h3{
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+}
+.education .content a{
+   display: block;
+   font-size: 1.7rem;
+   color: var(--black);
+   margin-bottom: 1rem;
+}
+
+/*footer*/
+.footer{
+   background-color: var(--white);
+}
+
+.footer .container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 2rem;
+}
+.footer .container .box h3{
+   font-size: 2.5rem;
+   
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+}
+.footer .container a{
+   display: block;
+   font-size: 1.7rem;
+   color: var(--black);
+   margin-bottom: 1rem;
+}
+.footer .container p{
+   display: block;
+   font-size: 1.7rem;
+   color: var(--black);
+   margin-bottom: 1rem;
+}
+.footer .container a i{
+   color:var(--darkblue);
+   padding-right: 1rem;
+}
+.footer .container p i{
+   color:var(--darkblue);
+   padding-right: 1rem;
+}
+
+
+
