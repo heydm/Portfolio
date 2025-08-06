@@ -234,7 +234,6 @@ section{
    background-color: var(--blue);
    text-align: left;
    padding-left: 5%;
-   
 }
 .education .content{
    display: flex;
@@ -242,6 +241,7 @@ section{
    justify-content: space-between;
    padding: 2rem;
    width: 1200px;
+  
    margin: 0 auto;
    padding: 0 2rem;
     text-align: left;
@@ -257,10 +257,21 @@ section{
    color: var(--black);
    margin-bottom: 1rem;
 }
+.education .content p{
+   display: block;
+   font-size: 1.7rem;
+   color: var(--black);
+   margin-bottom: 1rem;
+}
+
+.education .content p i{
+   color:var(--darkblue);
+   padding-right: 1rem;
+}
 
 /*footer*/
 .footer{
-   background-color: var(--white);
+   background-color: var(--pink);
 }
 
 .footer .container{
